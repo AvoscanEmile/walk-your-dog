@@ -1,0 +1,305 @@
+/* CSS Variables */
+:root {
+    /* Colors */
+    --pale-violet: hsl(276, 100%, 81%);
+    --moderate-violet: hsl(276, 55%, 52%);
+    --desaturated-dark-violet: hsl(271, 15%, 43%);
+    --grayish-blue: hsl(206, 6%, 79%);
+    --very-dark-violet: hsl(271, 36%, 24%);
+    --dark-grayish-violet: hsla(270, 7%, 64%);
+    --ligh-magenta: hsl(293, 100%, 63%);
+    --ligh-violet: hsl(264, 100%, 61%);
+    --message: hsl(272, 41%, 93%);
+    --white: hsl(0, 0%, 100%);
+    --background: hsl(0, 0%, 98%);
+    --light-grayish-violet: hsl(270, 20%, 96%);
+    --very-light-magenta: hsl(289, 100%, 72%);
+    /* Fonts */
+    --ff: 'Rubik', sans-serif;
+    --fs-p: 16px;
+    --fs-m: 13px;
+    --fs-h1: 42px;
+    --fs-d: 18px;
+    --fw-1: 400;
+    --fw-2: 500;
+    --fw-3: 700;
+}
+
+/* General Styling */
+
+html {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    min-height: 100vh;
+    font-family: var(--ff);
+    position: relative;
+}
+
+/* main styling */
+
+.main {
+    display: flex;
+    width: clamp(300px, 90vw, 950px);
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+
+.phone {
+    display: flex;
+    width: clamp(300px, 90vw, 350px);
+    border-radius: 40px;
+    padding: 12px;
+    overflow: hidden;
+    box-shadow: 5px 10px 12px 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+}
+
+.phone__first-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.phone__first-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to left, var(--ligh-magenta), var(--ligh-violet));
+    width: 100%;
+}
+
+.phone__white-box {
+    width: 60%;
+    background-color: var(--white);
+    height: 25px;
+    border-radius: 0 0 12px 12px;
+}
+
+.phone__second-flex {
+    display: flex;
+    align-self: stretch;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.phone__avatar-container {
+    display: flex;
+    align-items: center;
+}
+
+.phone__back-icon {
+    width: 15px;
+    height: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.phone__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+}
+
+.phone__name-container {
+    margin-left: 10px;
+    color: var(--white);
+}
+
+.phone__name {
+    font-weight: var(--fw-3);
+    margin: 0;
+}
+
+.phone__available {
+    margin: 0;
+    font-weight: var(--fw-1);
+    font-size: var(--fs-m);
+    opacity: 0.6;
+}
+
+.phone__menu-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.phone__messages-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--light-grayish-violet);
+    font-size: var(--fs-m);
+}
+
+.phone__message {
+    color: var(--moderate-violet);
+    max-width: 60%;
+    margin: 0 0 10px 13px;
+    background-color: var(--message);
+    padding: 1em;
+    border-radius: 10px 10px 10px 5px;
+}
+
+.phone__message:first-of-type {
+    margin-top: 20px;
+}
+
+.phone__images-container {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    margin-right: 13px;
+}
+
+.phone__dog-image {
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    margin-left: 12px;
+}
+
+.phone__answer {
+    align-self: flex-end;
+    max-width: 65%;
+    background-color: var(--white);
+    color: var(--desaturated-dark-violet);
+    padding: 1em;
+    margin: 0 13px 10px 0;
+    border-radius: 10px 10px 5px 10px;
+}
+
+.phone__message-container {
+    display: flex;
+    margin: 0 0 10px 13px;
+    background: linear-gradient(to right, var(--ligh-magenta), var(--ligh-violet));
+    color: var(--white);
+    justify-content: space-between;
+    width: 75%;
+    align-self: flex-start;
+    border-radius: 10px 10px 10px 5px;
+    text-decoration: none;
+    padding: 3px;
+}
+
+.message-container__description {
+    display: flex;
+    align-items: center;
+}
+
+.message-container__first-circle {
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+.message-container__second-circle {
+    width: 20px;
+    height: 20px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+.message-container__txt {
+    margin-left: 10px;
+}
+
+.message-container__price {
+    font-size: 18px;
+    font-weight: var(--fw-3);
+    margin: 0 10px 0 0;
+    align-self: center;
+}
+
+.phone__type-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 13px 10px 13px;
+    background-color: var(--white);
+    color: var(--grayish-blue);
+    border-radius: 25px;
+    padding: 5px 12px;
+}
+
+.type-container__type {
+    margin-left: 10px;
+}
+
+.type-container__send-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--very-dark-violet);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.type-container__send {
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
+}
+
+.description {
+    width: clamp(300px, 90vw, 500px);
+}
+
+.description__title {
+    color: var(--very-dark-violet);
+    font-weight: var(--fw-2);
+    font-size: var(--fs-h1);
+}
+
+.description__txt {
+    color: var(--dark-grayish-violet);
+    font-size: var(--fs-d);
+    word-spacing: 0.15em;
+    letter-spacing: 0.05em;
+}
+
+/* Background styling */
+
+.background-first {
+    min-height: 90vh;
+    position: absolute;
+    width: 563px;
+    background: linear-gradient(to bottom left, var(--ligh-magenta), var(--ligh-violet));
+    align-self: flex-start;
+    border-radius: 0 0 280px 280px;
+    right: calc(50vw + clamp(100px, 50vw, 398px));
+    z-index: -1;
+}
+
+.background-second {
+    min-height: 90vh;
+    position: absolute;
+    width: 563px;
+    background: var(--light-grayish-violet);
+    align-self: flex-end;
+    border-radius: 280px 280px 0 0;
+    left: calc(50vw + clamp(100px, 50vw, 398px)); 
+    z-index: -1;
+}
