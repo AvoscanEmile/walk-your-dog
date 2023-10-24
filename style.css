@@ -1,7 +1,6 @@
 /* CSS Variables */
 :root {
     /* Colors */
-    --pale-violet: hsl(276, 100%, 81%);
     --moderate-violet: hsl(276, 55%, 52%);
     --desaturated-dark-violet: hsl(271, 15%, 43%);
     --grayish-blue: hsl(206, 6%, 79%);
@@ -13,7 +12,6 @@
     --white: hsl(0, 0%, 100%);
     --background: hsl(0, 0%, 98%);
     --light-grayish-violet: hsl(270, 20%, 96%);
-    --very-light-magenta: hsl(289, 100%, 72%);
     /* Fonts */
     --ff: 'Rubik', sans-serif;
     --fs-p: 16px;
