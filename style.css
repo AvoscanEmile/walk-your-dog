@@ -52,6 +52,7 @@ body {
     width: clamp(300px, 90vw, 950px);
     justify-content: space-between;
     align-items: center;
+    margin-top: 60px;
 }
 
 .phone {
@@ -341,7 +342,6 @@ body {
 @media (max-width: 1040px) {
     .main {
         flex-direction: column;
-        margin-top: 60px;
     }
 
     .background-first {
