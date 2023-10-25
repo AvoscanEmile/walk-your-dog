@@ -27,7 +27,6 @@
 
 html {
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 * {
@@ -43,6 +42,7 @@ body {
     min-height: 100vh;
     font-family: var(--ff);
     position: relative;
+    overflow-x: hidden;
 }
 
 /* main styling */
@@ -52,7 +52,6 @@ body {
     width: clamp(300px, 90vw, 950px);
     justify-content: space-between;
     align-items: center;
-    position: absolute;
 }
 
 .phone {
@@ -335,4 +334,29 @@ body {
     border-radius: 280px 280px 0 0;
     left: calc(50vw + clamp(100px, 50vw, 398px)); 
     z-index: -1;
+}
+
+/* Media Queries */
+
+@media (max-width: 1040px) {
+    .main {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .background-first {
+        right: 50vw;
+        height: 700px;
+        min-height: 0;
+    }
+
+    .background-second {
+        display: none;
+    }
+
+    .description {
+        width: 90%;
+        text-align: center;
+        margin-top: 10px;
+    }
 }
