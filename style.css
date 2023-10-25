@@ -106,6 +106,12 @@ body {
     height: 20px;
     margin-left: 12px;
     margin-right: 12px;
+    transition: transform 50ms;
+}
+
+.phone__back-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .phone__avatar {
@@ -113,6 +119,12 @@ body {
     height: 40px;
     border-radius: 50%;
     border: 1px solid var(--white);
+    transition: transform 50ms;
+}
+
+.phone__avatar:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .phone__name-container {
@@ -136,6 +148,12 @@ body {
     width: 24px;
     height: 24px;
     margin-right: 10px;
+    transition: transform 50ms;
+}
+
+.phone__menu-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .phone__messages-flex {
@@ -171,6 +189,12 @@ body {
     height: 65px;
     border-radius: 15px;
     margin-left: 12px;
+    transition: transform 100ms;
+}
+
+.phone__dog-image:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 .phone__answer {
@@ -194,6 +218,11 @@ body {
     border-radius: 10px 10px 10px 5px;
     text-decoration: none;
     padding: 3px;
+    transition: all 150ms;
+}
+
+.phone__message-container:hover {
+    transform: scale(1.025);
 }
 
 .message-container__description {
@@ -217,6 +246,7 @@ body {
     height: 20px;
     background-color: var(--white);
     border-radius: 50%;
+    opacity: 0;
 }
 
 .message-container__txt {
@@ -253,12 +283,17 @@ body {
     border-radius: 50%;
     height: 30px;
     width: 30px;
+    transition: all 100ms;
 }
 
 .type-container__send {
     width: 20px;
     height: 20px;
     margin-left: 3px;
+}
+
+.type-container__send-container:hover {
+    transform: scale(1.1);
 }
 
 .description {
